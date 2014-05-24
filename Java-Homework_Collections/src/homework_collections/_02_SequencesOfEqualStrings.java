@@ -20,21 +20,16 @@ public class _02_SequencesOfEqualStrings {
 
         for (int i = 0; i < arrayStrings.length; i++) {
 
-            if (i != arrayStrings.length - 1) {
-                String current=arrayStrings[i];
-                System.out.printf("%s", current);
-                
-                while( i<arrayStrings.length-1
-                        && current.equals(arrayStrings[i + 1])) {
-                    System.out.printf(" %s", arrayStrings[i]);
-                    i++;
-                }
-                System.out.printf("%n");
+            String current = arrayStrings[i];
+            System.out.printf("%s", current);
+
+            while (i < arrayStrings.length - 1
+                    && current.equals(arrayStrings[i + 1])) {
+                System.out.printf(" %s", arrayStrings[i]);
+                i++;
             }
-            
-            if (arrayStrings.length==1 || arrayStrings.length-1==i ) {
-                System.out.printf("%s", arrayStrings[i]);
-            }
+            System.out.printf("%n");
+
         }
     }
 }
